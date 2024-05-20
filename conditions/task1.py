@@ -1,14 +1,7 @@
-def Factorial(a):
-    c=1
-    for i in range(1,a+1):
-        c*=i
-    return c
-    
-a=int(input())
-b=int(input())
-n=Factorial(a)
-nk=Factorial(a-b)
-k=Factorial(b)
-c=n/(nk*k)
-print(c)
+from datetime import date, time, datetime, timedelta
 
+birth_date = datetime(2000, 11, 9)
+now = datetime.now()
+age_year = now.date() - birth_date.date()
+age = now - birth_date
+print(age)
